@@ -3,30 +3,64 @@
 #I am going to give this my all, I know you told me that Scott and I are the curve, but I refuse to give up
 #Let's Go!
 #1 open and print, print number of lines
-file = open('data11Oct22.csv')
-#print(file.read())
-
+#from unittest import skipIf
 import csv
+from itertools import count
+
+headers = ()
+
+#i'm not doing strings. I tried that and it didn't work/took way too long
+with open('data.csv', 'r') as csv_file:
+    csv_reader= csv.reader(csv_file)
+    next(csv_reader)
+    next(csv_reader)
+    for line in csv_reader:
+        print(line)
+    #for line in csv_reader:
+        #print(line)
+    #print(list(csv_readers))
+row_count= 0
+with open('data.csv', 'r') as csv_file:
+
+    for _ in csv_file:
+        row_count+=1
+print("the number of rows is", row_count)
+        # for line in csv_file:
+        # print(line, end='')
+
+
+    #csv_file =csv_file.read(100)
+    #print(csv_file, end= '')
+    #size_of_reading= 100
+    #csv_file_contents = csv_file.read(size_of_reading)
+    #print(csv_file.tell())
+    #printing how many interations of 100 characters
+    #while len(csv_file_contents)>0:
+        #print(csv_file_contents, end= " ")
+        #csv_file_contents = csv_file.read(size_of_reading)
+
+
+def sorted_by_letter()
+
+
+
+print(" ")
+print("end of line")
+
+
+#with open('data.csv', 'r') as csv_file:
+
+
+
 #print(file.read())
 #I added that to see the data
 
-count=0
-with open('data11Oct22.csv', 'r') as csvfile:
-    csvreader = csv.reader(csvfile, delimiter=',')
-    for row in csvfile:
-        count+=1
-print("the number of rows is", count)
-file.close()
 
 #with open('data11Oct22.csv', 'r') as csvfile:
 
    # alpha_data = sorted(csv.reader(csvfile, delimiter=',', quotechar='|'))
     #print(alpha_data)
 #please help  this is all the data alphabetized  idk what i did
-
-def part_3 (data11Oct22, Line TC Setpoint(C)):
-    return[row[Line TC Setpoint(C)] for row in csv.DictReader(open())]
-print(part_3)
 
 #with open('data11Oct22.csv', 'r') as csvfile:
     #csvreader = csv.reader(csvfile, delimiter=',')
@@ -62,5 +96,3 @@ print(part_3)
 
 #print("end of line")
             #print the sorted headers
-
-
