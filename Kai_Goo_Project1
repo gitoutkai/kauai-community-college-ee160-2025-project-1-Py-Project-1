@@ -1,1 +1,66 @@
+#Kai_Goo_Python_Project_1
+#Kaihehau_Goo_Project#1
+#I am going to give this my all, I know you told me that Scott and I are the curve, but I refuse to give up
+#Let's Go!
+#1 open and print, print number of lines
+file = open('data11Oct22.csv')
+#print(file.read())
+
+import csv
+#print(file.read())
+#I added that to see the data
+
+count=0
+with open('data11Oct22.csv', 'r') as csvfile:
+    csvreader = csv.reader(csvfile, delimiter=',')
+    for row in csvfile:
+        count+=1
+print("the number of rows is", count)
+file.close()
+
+#with open('data11Oct22.csv', 'r') as csvfile:
+
+   # alpha_data = sorted(csv.reader(csvfile, delimiter=',', quotechar='|'))
+    #print(alpha_data)
+#please help  this is all the data alphabetized  idk what i did
+
+def part_3 (data11Oct22, Line TC Setpoint(C)):
+    return[row[Line TC Setpoint(C)] for row in csv.DictReader(open())]
+print(part_3)
+
+#with open('data11Oct22.csv', 'r') as csvfile:
+    #csvreader = csv.reader(csvfile, delimiter=',')
+    #by default the code assumes that the csv ("comma sepereated") is "lmao" comma seperated
+    #for range in csvreader:
+        #print(range)
+    #not what i wanted it to do
+    #with open('data11Oct22.csv', 'w') as new_file:
+     #   csvwriter = csv.writer(new_file, delimiter= ',')
+
+    #for line in csvreader:
+        #print(line[1])
+    #print("Get me dillenger!")
+
+
+#print("end of line, ")
+
+
+
+
+
+
+#def print_sorted_headers(csv_file_path):
+    #I'm doing this part on a mac rn  Note to self swap in the path when you get home
+        # I'm doing this part on a mac rn  Note to self swap in the path when you get home
+#import csv
+#row = list(csv.reader(open('data11Oct22.csv')))
+#row[3]= ['Line TC Setpoint(C)','Line TC(C)', 'Line Heater(%)',	'Vaporizer TC(C)',	',Vaporizer HeaterTC(C)',	'Vaporizer Heater(%)','Vaporizer Scale(lb)',	'Vaporization(lb/h)',	'Powder Feed Setpoint(g/h)',	'Powder Scale(g)',	'Powder Rate(g/h)',	'Chamber TC Setpoint(C)',	'Chamber TC1(C)',	'Chamber TC2(C)',	'Chamber Heater(%)',	'MFC#0',	'MFC#1','MFC#2',	'MFC#3',	'ArMFC#1',	'ArMFC#2',	'ArMFC#3',	'XFMR Status',	'Vaccum Pump Outlet TC(C)',	'Vaccum Pump Intlet TC(C)',	'Inlet Valve Open',	'Inlet Valve Closed',	'Outlet Valve Open',	'Outlet Valve Closed',	'MKS Press/Pos', 'MKS Set Point',	'MKS Pressure(Torr)',	'MKS Position(degrees)',	'Injector TC(C)',	'HG-412',	'HG-414',	'HG-416',	'PG-412',	'PG-414',	'PG-416',	'HG-418',	'MTS-414',	'HG-419',	'MH-481',	'MTS-420',	'Vibrator',	'Vibrator2',	'Bell Jar Press(Torr)',	'Exhaust Press(Torr)',	'Run-Time(min)',	'Sub Run-Time(min)]',
+        # Read the first row as headers
+
+#print(row)
+
+
+#print("end of line")
+            #print the sorted headers
+
 
