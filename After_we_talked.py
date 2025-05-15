@@ -41,3 +41,9 @@ with open('data11Oct21.csv', 'r') as csvfile:
         col_index = headers_row.index(selected_columns)
         print("Selected column name is", headers_row[col_index])
         print(col_index)
+        
+    #if co1_index not [x:25):
+        #print("exceeds limits of graph")
+    #else:
+        #sorted_columns=sorted((ʻdata11Oct21.csvʻ), key=lambda row: col_index)
+        #sorted_indicies = np.argsort(-arr[:,1])
