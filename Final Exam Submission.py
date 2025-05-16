@@ -25,7 +25,7 @@ column_headers = part_1[0]
 def part2function():
    column_headers_alpha = sorted(part_1[0])
    print(column_headers_alpha)
-
+#2
 part2function()
 
 values=[]
@@ -33,9 +33,9 @@ for row in part_1:
    val= row[3]
    values.append(val)
 values = values[1:]
-#print(values)
+print(values)
 
-
+#3
 def part3function(column_names):
     column_index = [column_headers.index(column_names)][0]
     values=[]
@@ -45,7 +45,7 @@ def part3function(column_names):
     values = values[1:]
     return values
 ans = part3function('Line TC Setpoint(C)')
-#print(ans)
+print(ans)
 
 #4
 def max_partfunction(call_names):
@@ -130,6 +130,14 @@ def part10function(temperature1, temperature2):
     plt.plot(np.array(x_time), difference)
     plt.show()
 part10function("Vaporizer Heater(%)","Vaporizer HeaterTC(C)")
+
+
+
+
+
+
+#assorted code that worked/didnt work/ worked but wasnt def function 
+# and therefore couldnt be called later, ie: call the command at end of problem 3
 #function 7 is where the data correllates.
 
 #     csvreader = csv.reader(csvfile)
